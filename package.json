@@ -1,0 +1,103 @@
+{
+    "name": "@sxa/celt",
+    "version": "10.2.2",
+    "description": "Creative Exchange Live for SXA themes",
+    "keywords": [
+        "CELT",
+        "SXA",
+        "Creative Exchange Live",
+        "Sitecore Experience Accelerator",
+        "Gulp"
+    ],
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "Sitecore Corporation A/S",
+    "homepage": "https://doc.sitecore.com/developers/sxa/18/sitecore-experience-accelerator/en/modify-your-site-design-with-creative-exchange-live.html",
+    "license": {
+        "type": "Sitecore MyGet License",
+        "url": "https://doc.sitecore.net/~/media/C23E989268EC4FA588108F839675A5B6.pdf"
+    },
+    "main": "index.js",
+    "dependencies": {
+        "@babel/cli": "^7.8.4",
+        "@babel/core": "^7.9.0",
+        "@babel/plugin-transform-runtime": "^7.10.1",
+        "@babel/polyfill": "^7.8.7",
+        "@babel/preset-env": "^7.9.0",
+        "@babel/register": "^7.9.0",
+        "@rollup/plugin-babel": "^5.0.3",
+        "@rollup/plugin-commonjs": "^13.0.0",
+        "@rollup/plugin-node-resolve": "^8.0.1",
+        "colors": "^1.4.0",
+        "docdash": "1.2.0",
+        "form-data": "^3.0.0",
+        "formstream": "^1.1.0",
+        "gulp": "^4.0.2",
+        "gulp-autoprefixer": "^7.0.1",
+        "gulp-babel": "^8.0.0",
+        "gulp-better-rollup": "^4.0.1",
+        "gulp-clean-css": "^4.3.0",
+        "gulp-cli": "^2.2.0",
+        "gulp-concat": "^2.6.1",
+        "gulp-debug": "^4.0.0",
+        "gulp-eslint": "^6.0.0",
+        "gulp-filter": "^6.0.0",
+        "gulp-if": "^3.0.0",
+        "gulp-prompt": "^1.2.0",
+        "gulp-rename": "^2.0.0",
+        "gulp-sass": "^5.0.0",
+        "node-sass": "^6.0.1",
+        "gulp-sass-bulk-import": "^1.0.1",
+        "gulp-sass-grapher": "^1.0.0",
+        "gulp-sourcemaps": "^2.6.5",
+        "gulp-uglify-es": "^2.0.0",
+        "gulp-upload": "^1.0.0",
+        "gulp-watch": "^5.0.1",
+        "gulp.spritesmith": "^6.11.0",
+        "inquirer": "^7.1.0",
+        "jsdoc": "^3.6.3",
+        "path": "^0.12.7",
+        "request": "2.81.0",
+        "rimraf": "^3.0.2",
+        "rollup": "^1.32.1",
+        "urllib": "^2.34.2",
+        "vinyl-file": "^3.0.0",
+        "execa": "^2.0.0"
+    },
+    "babel": {
+        "presets": [
+            "@babel/env"
+        ]
+    },
+    "eslintConfig": {
+        "extends": "eslint:recommended",
+        "ecmaVersion": 5,
+        "sourceType": "module",
+        "rules": {
+            "no-alert": 0,
+            "no-bitwise": 0,
+            "camelcase": 1,
+            "curly": 1,
+            "eqeqeq": 0,
+            "no-eq-null": 0,
+            "guard-for-in": 1,
+            "no-empty": 1
+        },
+        "globals": {
+            "$": false,
+            "jQuery": false,
+            "Sitecore": false,
+            "XA": false,
+            "_": false
+        },
+        "env": {
+            "browser": true,
+            "node": true
+        }
+    },
+    "devDependencies": {
+        "gulp-sass-bulk-importer": "^3.0.1",
+        "gulp-tap": "^2.0.0"
+    }
+}
